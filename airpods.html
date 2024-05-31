@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Optiemenu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            display: none; /* Hide the default checkboxes and radio buttons */
+        }
+
+        label.checkbox, label.radio {
+            display: block;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            background-color: #FFF;
+            color: #333;
+        }
+
+        input[type="checkbox"]:checked + label, input[type="radio"]:checked + label,
+        label.checkbox:hover, label.radio:hover {
+            background-color: #007BFF;
+            color: white;
+            border-color: #007BFF;
+        }
+
+        input[type="submit"] {
+            background-color: transparent;
+            color: #333;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        input[type="submit"]:hover, input[type="submit"]:focus {
+            background-color: #007BFF;
+            color: white;
+            border-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit_form.php" method="post">
+        <div class="section">
+            <h2>Selecteer Generatie</h2>
+            <input type="checkbox" id="g1" name="generation[]" value="G1">
+            <label class="checkbox" for="g1">G1</label>
+            <input type="checkbox" id="g2" name="generation[]" value="G2">
+            <label class="checkbox" for="g2">G2</label>
+            <input type="checkbox" id="g3" name="generation[]" value="G3">
+            <label class="checkbox" for="g3">G3</label>
+        </div>
+        
+        <div class="section">
+            <h2>Staat van de Stad</h2>
+            <input type="radio" id="oke_staat" name="city_condition" value="Oke staat">
+            <label class="radio" for="oke_staat">Oke staat</label>
+            <input type="radio" id="goede_staat" name="city_condition" value="Goede staat">
+            <label class="radio" for="goede_staat">Goede staat</label>
+            <input type="radio" id="zeer_goede_staat" name="city_condition" value="Zeer goede staat">
+            <label class="radio" for="zeer_goede_staat">Zeer goede staat</label>
+        </div>
+
+        <input type="submit" value="Kijken naar resultaten">
+    </form>
+</body>
+</html>

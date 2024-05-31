@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refurbished Winkel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .product-image {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex-grow: 1;
+        }
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: transparent;
+            color: #333;
+            padding: 10px 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        button:hover {
+            background-color: #007BFF;
+            color: white;
+            border-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Producten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="welcome-message" id="home">
+        <h1>Welkom in onze Refurbished Winkel</h1>
+        <p>Ontdek ons geweldige assortiment refurbished elektronica tegen aantrekkelijke prijzen.</p>
+        <button id="view-products" class="transparent-button">Bekijk onze producten</button>
+    </section>
+
+    <section id="products">
+        <h2>Onze Producten</h2>
+        <div class="container">
+            <img class="product-image" src="https://www.pngmart.com/files/13/Apple-Airpods-PNG-Image.png" alt="AirPods G3">
+            <div class="product-details">
+                <h1 class="product-title">AirPods G3 - Zeer Goede Staat</h1>
+                <p class="product-description">
+                    Deze AirPods zijn in zeer goede staat en eigenlijk nooit gebruikt. Ze zijn terug uit een vliegtuig gestuurd, teruggestuurd omdat een andere keuze werd gemaakt door de gebruiker, of zijn niet veilig in hun eigen land geraakt.
+                </p>
+                <button onclick="window.location.href='order.html';">Bestellen</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Refurbished Winkel. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

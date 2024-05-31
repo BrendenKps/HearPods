@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestelling afronden</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: white;
+            padding: 50px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding: 10px;
+            width: 90%;
+            max-width: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button {
+            background-color: #4CAF50; /* Groene knop */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bestel Formulier '69.99 Euro'</h1>
+    <form action="confirmation.html" method="post">
+        <input type="text" name="name" placeholder="Volledige naam" required>
+        <input type="email" name="email" placeholder="E-mailadres" required>
+        <input type="text" name="phone" placeholder="Telefoonnummer" required>
+        <textarea name="address" placeholder="Adres" required></textarea>
+        <button type="submit" class="button">Bestelling plaatsen</button>
+    </form>
+</body>
+</html>
