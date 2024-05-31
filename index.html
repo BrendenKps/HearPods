@@ -10,6 +10,28 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
         }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
         .container {
             display: flex;
             align-items: center;
@@ -54,7 +76,8 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <img src="path/to/your/logo.png" alt="Logo" class="logo">
         <nav class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
